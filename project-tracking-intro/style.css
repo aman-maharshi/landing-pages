@@ -24,17 +24,6 @@ h1, h3, button, .nav-link, span {
     justify-content: space-between;
     align-items: center;
 }
-/*
-body {
-    height: 100%;
-    background-image: url(./images/illustration-devices.svg);
-    background-repeat: no-repeat;
-    z-index: 10;
-    background-position-x: 100%;
-    background-position-y: 50%;
-}
-*/
-
 
 /*
     NAVIGATION
@@ -66,7 +55,18 @@ nav {
 .nav-link:hover {
     text-decoration: underline;
 }
-
+@media (max-width: 576px) {
+    nav {
+        margin: 40px 0;
+        padding: 0 40px;
+    }
+    .nav-list li{
+        margin-left: 20px;
+    }
+    .nav-list li:last-child {
+        margin-left: 60px;
+    }
+}
 
 /*
     MAIN 
@@ -126,8 +126,25 @@ span {
     margin-left: 20px;
 }
 @media (max-width: 576px) {
+    main {
+        margin-top: 40px;
+        background-position-x: 0%;
+        background-size: 138%;
+    }   
+    h3 {
+        margin-top: 400px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .main-para {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .main-text {
         max-width: 100%;
+        width: 100%;
+        margin-left: 40px;
     }
 }
 /*
