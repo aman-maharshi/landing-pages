@@ -67,6 +67,9 @@ nav {
     background-color: var(--grayish-blue);
     opacity: 0.5;
 }
+.hamburger {
+    display: none;
+}
 @media (max-width: 576px) {
     nav {
         margin: 40px 0;
@@ -81,15 +84,33 @@ nav {
 }
 @media (max-width: 425px) {
     .last::before {
-        display: none;
+      display: none;
     }
     .nav-list li{
         margin-left: 10px;
-        font-size: 15px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
     }
     .nav-list li:last-child {
-        margin-left: 20px;
+        margin-left: 10px;
     }
+    /*  implementing the hamburger display */
+    .hamburger {
+        display: block;
+    }
+    .nav-list {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        padding: 20px 0 0 0;
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+    
 }
 
 /*
@@ -172,20 +193,11 @@ span {
     }
 }
 @media (max-width: 425px) {
-    main {
-        margin-top: 20px;
-        background-position-x: 0%;
-        background-size: 138%;
-    }   
     h3 {
         margin-top: 300px;
     }
     h1 {
         font-size: 40px;
-    }
-    .main-para {
-        margin-top: 20px;
-        margin-bottom: 30px;
     }
     .main-text {
         max-width: 100%;
