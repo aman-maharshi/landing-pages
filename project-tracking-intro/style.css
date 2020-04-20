@@ -67,11 +67,27 @@ nav {
     background-color: var(--grayish-blue);
     opacity: 0.5;
 }
+/*  implementing the hamburger display */
 .hamburger {
     display: none;
 }
 .show-nav {
+    display: block !important;
+}
+.toggle-flex {
     display: flex !important;
+}
+.icon-hamburger {
+    display: block;
+}
+.icon-close {
+    display: none;
+}
+.show-nav .icon-hamburger {
+    display: none;
+}
+.show-nav .icon-close {
+    display: block;
 }
 @media (max-width: 576px) {
     nav {
