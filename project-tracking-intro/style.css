@@ -181,6 +181,11 @@ button {
     padding: 15px 30px;
     border-radius: 5px;
     margin-bottom: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: hsl(0, 54%, 55%);
 }
 span {
     color: var(--grayish-blue);
